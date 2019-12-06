@@ -16,6 +16,8 @@ public class HelloWorld {
         return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
     }
     public static void main(String[] args) {
+
+//        Greeter greeter = new Greeter()
         port(getHerokuAssignedPort());
         get("/", (req, res) -> {
             return new ModelAndView(new HashMap<>(), "hello.hbs");

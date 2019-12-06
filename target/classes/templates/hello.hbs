@@ -2,5 +2,29 @@
 Hello, {{name}}
 <div>
     <a href="/">back</a>
+    <form method="post" action="/greet">
+        <div>
+            <input type="text" name="firstName">
+        </div>
+
+        <div class="counter">
+            {{counter}}
+        </div>
+
+        <div class="language">
+            <dv>
+                <input type="radio" name="language" value="eng">English
+
+            </dv>
+
+            <div>
+            <input type="radio" name="language" value="Afr">Afrikaans
+        </div>
+
+            <div>
+                <input type="radio" name="language" value="xhosa">Xhosa
+            </div>
+
+    </form>
 
 </div>
