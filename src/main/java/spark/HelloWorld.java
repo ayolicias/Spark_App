@@ -18,7 +18,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
         get("/", (req, res) -> {
-            return new ModelAndView(new HashMap<>(), "index.hbs");
+            return new ModelAndView(new HashMap<>(), "hello.hbs");
         }, new HandlebarsTemplateEngine());
         get("/hello", (req, res) -> {
 
